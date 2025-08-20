@@ -20,7 +20,7 @@ Arguments are:
   - `uipc_textured`: soft gelpad simulated via UIPC.
     - The gelpad also has a marker texture and a camera is used to get the RGB image of this texture.
 - `--num_envs`, which defines how many environments should be simulated.
-  - Currently the UIPC based envs can only be run with 1 env
+  - **Currently the UIPC based envs can only be run with `--num_envs=1`**
 - `--debug_vis`, which toggles rendering of the sensor output in the gui on
   - is off by default
 
