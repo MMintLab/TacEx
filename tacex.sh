@@ -299,6 +299,8 @@ while [[ $# -gt 0 ]]; do
             elif [ "$2" = "all" ]; then
                 echo "[INFO] Installing package tacex_uipc..."
                 ${python_exe} -m pip install -e ${TACEX_PATH}/source/tacex_uipc -v
+                # consume the extra argument so it isn't processed by the outer loop
+                shift
             # else
             #     echo "[INFO] Installing rl-framework: $2"
             #     extension_name=$2
